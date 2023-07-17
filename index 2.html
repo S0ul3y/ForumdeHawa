@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .bigcontenaire{
+            width: 100%;
+            height: 100%;    
+            backdrop-filter: blur(15px);
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-around;
+            background-image: url(font.jpg);
+            background-position: fixed;
+            background-size: cover;
+            overflow: scroll;
+            padding-bottom: 10%;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        .contenaire{
+            width: 300px;
+            height: 350px;
+            text-align: center;
+            border-radius: 15px;
+            position: relative;
+            margin: 4% 2%;
+            /* margin-top: 2%; */
+        }
+        @media screen and (max-width:1060px){
+            .bigcontenaire{
+                width: 100%;
+                height: 100vh;
+            }
+        }
+            
+        
+        .icon{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            /* border: 1px solid black; */
+            position: relative;
+            top: 15%;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.26);
+            font-size: 4rem;
+            /* outline: none; */
+        }
+        .icon>span{
+            position: absolute  ;
+            transform: translate(-50%, 30%);
+            text-shadow: 1px 0px 10px rgba(0, 0, 0, 0.507) ;
+            font-weight: bolder;
+        }
+        .texte{
+            background-color: white;
+            box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, 0.514);
+            width: 100%;
+            height: 220px;
+            /* padding-top: 13%; */
+            border-radius: 15px;
+            text-align: center;
+            padding: 15% 5px 5px 5px;
+            font-size: 1.2rem;
+            margin: 0 auto;
+            word-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigcontenaire">
+
+        <div class="contenaire">
+            <div class="icon"><span>1</span></div>
+            <div class="texte">
+                <h3 style="padding-top: 10%;">La formation des enseignants et le recrutement de 04 volontaires pour appuyer les 03 premiers cycles ( ONG ERADD) 
+                </h3>
+            </div>
+        </div>
+
+        <div class="contenaire">
+            <div class="icon"><span>2</span></div>
+            <div class="texte">
+                <h3 style="padding-top: 10%;"> La rénovation en semi-dures des 03 premiers cycles de Hawa ( ONG ERADD - CSG)
+                </h3>
+            </div>
+        </div>
+
+        <div class="contenaire">
+            <div class="icon"><span>3</span></div>
+            <div class="texte">
+                <h3 style="padding-top: 10%;"> La réalisation d’un point d’eau dans le Gourma et d’un autre en cours dans le Gourma ( Communauté musulmane de France) 
+ 
+                </h3>
+            </div>
+        </div>
+    
+        <div class="contenaire">
+            <div class="icon"><span>4</span></div>
+            <div class="texte">
+                <h3 style="padding-top: 10%;">Création d’un jardin maraîchers de 2ha dans le quartier Hawa - Horbo (MINUISMA) 
+ 
+                </h3>
+            </div>
+        </div>
+
+    
+
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>
