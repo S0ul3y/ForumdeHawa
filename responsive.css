@@ -1,5 +1,18 @@
 
-@media screen and (max-width: 767px) {
+
+@media screen and (width: 320px) {
+    .quinoussomme{
+        display: none;
+        height: 140vh;
+        width: 100%;
+        position: relative; 
+        background-color: rgba(192, 190, 190, 0.219);
+    }
+    
+}
+
+
+@media screen and (max-width: 700px) {
     .menu{
         display: none;
     }
@@ -10,44 +23,58 @@
         width: 85px;
         height: 60px;
         top: 0px;
-    }    
+    }
+    .titre{
+        width: 90%;
+        padding-top: 10%;
+    }
+    .titre h1{
+        font-size: 0rem;
+        display: none;
+    }
     
     .quinoussomme{
         display: block;
         overflow: hidden;
-        height: 130vh;
-        width: 90vw;
-        /* margin: 1 auto; */
-        position: relative; 
+        height: 110vh;
+        width: 100vw;
+        margin: 10px auto;
+        /* position: relative;  */
         background-color: rgba(192, 190, 190, 0.219);
     }
 
     .sousDiv{
-        position: relative;
+        /* position: relative;
         width: 100%;
         height: 50%;
-        /* padding: 5px; */
+        padding: 5px;
+        flex-wrap: wrap;
+        row-gap: 2; */
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     .sousDiv p{
-        position: relative;
+        /* position: relative;
         top: -5px;
         width: 90%;
-        text-align: left  ;
-        
+        text-align: left  ; */
     }
 
+    .sousDiv a{
+        /* margin: 5px 0px; */
+    }
     .imgzone{
-        width: 100%;
-        height: 50%;
-        /* border: 2px solid rgb(226, 28, 28);     */
-        position: absolute;
-        left: 0;
-        bottom: 0;
+        /* bottom: 0px;
+        width: 95%;
+        height: 30%;
         overflow: hidden;
-        background-image: url(photo.1502038.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        margin: 10px auto;
+        border-radius: 20px; */
+    }
+    .imgzone img{
+        
     }
     
     
@@ -72,18 +99,214 @@
         
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1600px) {
+    
+  }
+  
+  @media screen and (max-width: 991px) {
+    
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+    
+  }
+  
+  /* @media screen and (max-width: 480px) {
+    .quinoussomme{
+        display: none;
+        overflow: hidden;
+        height: 200vh;
+        width: 100%;
+        margin: 1 auto;
+        position: relative; 
+        background-color: rgba(192, 190, 190, 0.219);
+    }
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .quinoussomme{
+    display: flex;
+    background-color: rgba(192, 190, 190, 0.219);
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.sousDiv{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-left: 2%;
+    display: block;
+}
+.sousDiv p{
+    font-size: 1.2rem;
+    margin-top: 10%;
+}
+.sousDiv a{
+    position: absolute;
+    padding: 16px 25px;
+    background-color: rgba(61, 61, 248, 0.555);
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin: 5px;
+    
+    
+}
+.sousDiv a:hover{
+    background-color: rgba(61, 61, 248, 0.877);
+}
+
+.imgzone{
+    position: relative;
+    width: 50%;
+    height: 380px;
+    overflow: hidden;
+    /* background-image: url(photo.1502038.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    border-radius: 20px;
+}
+.imgzone img{
+    
+}
+
+
+.notreequipe{
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 60vw;
+    text-align: center;
+}
+.notreequipe span{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.EquipeDeco{
+    width: 150px;
+    height: 5px;
+    background-color: rgba(61, 61, 248, 0.555);
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.MbreEquipe{
+    max-width: 700px;
+    min-width: 100px;
+    /* margin-left: 25vw; */
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.employe{
+    width: 200px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(58, 57, 57, 0.301);
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
+.employe img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 300px) {
+    .quinoussomme{
+        display: none;
+        height: 140vh;
+        width: 100%;
+        position: relative; 
+        background-color: rgba(192, 190, 190, 0.219);
+    }
+    
+}
+
+
+
+
+
+
+
+
+<div class="notreequipe">
+            <div class="EquipeDeco"></div><br>
+            
+            <Span>Notre Equipe</Span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sequi nostrum mollitia ipsam labore saepe culpa neque impedit perferendis ullam harum amet sapiente quidem officia minus, accusamus vero fuga cupiditate?</p>
+            
+    </div>
+
+
+    <div class="MbreEquipe">
+        <div class="employe">
+            <br><img src="homme-portrait-sourire-300x300.jpg" alt=""><br>
+            <h3>Souleymane</h3>
+            <h4 style="color:rgba(61, 61, 248, 0.555) ;">DEV</h4>
+        </div>
+        
+        <div class="employe">
+            <br><img src="homme-portrait-sourire-300x300.jpg" alt=""><br>
+            <h3>Souleymane</h3>
+            <h4 style="color:rgba(61, 61, 248, 0.555) ;">DEV</h4>
+        </div>
+        
+        <div class="employe">
+            <br><img src="homme-portrait-sourire-300x300.jpg" alt=""><br>
+            <h3>Souleymane</h3>
+            <h4 style="color:rgba(61, 61, 248, 0.555) ;">DEV</h4>
+        </div>
+        
+        <div class="employe">
+            <br><img src="homme-portrait-sourire-300x300.jpg" alt=""><br>
+            <h3>Souleymane</h3>
+            <h4 style="color:rgba(61, 61, 248, 0.555) ;">DEV</h4>
+        </div>
+        
+        <div class="employe">
+            <br><img src="homme-portrait-sourire-300x300.jpg" alt=""><br>
+            <h3>Souleymane</h3>
+            <h4 style="color:rgba(61, 61, 248, 0.555) ;">DEV</h4>
+        </div>
+        
+        <div class="employe">
+            <br><img src="homme-portrait-sourire-300x300.jpg" alt=""><br>
+            <h3>Souleymane</h3>
+            <h4 style="color:rgba(61, 61, 248, 0.555) ;">DEV</h4>
+        </div>
+        
+
+    </div>
