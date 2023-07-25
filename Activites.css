@@ -179,7 +179,10 @@ nav{
         /* flex-wrap: wrap; */
         font-size: 1.2rem;
         overflow: scroll;
-        height: 65%;
+        height: 69%;
+    }
+    .desc h2{
+        font-size: 1.5rem;
     }
     .desc p{
         font-size: 1.3rem;
