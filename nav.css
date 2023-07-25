@@ -1,3 +1,14 @@
+*{
+    font-family:'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
 
 .header{
     height: 100vh;
@@ -90,7 +101,9 @@ nav ul li a:active{
     text-align: center;
     /* padding:0 5%; */
 }
-
+::-webkit-scrollbar{
+    display: none;
+ }
 
 
 
@@ -196,7 +209,7 @@ nav ul li a:active{
         height: 65vh;
         /* border: 1px solid white; */
         background-color: rgba(41, 40, 40, 0.607);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(7px);
         border-radius: 15px;
         transition: all 0.3s ease-in-out;
     }
@@ -239,6 +252,15 @@ nav ul li a:active{
         display: block;
         background-color: white;
         border-radius: 15px;
+    }
+    nav ul{
+        width: 73%;
+        height: 100%;
+        position: absolute;
+        margin:40px auto;
+        /* transform: translate(120%, 10%); */
+        display: inline-block;
+         text-align: center; 
     }
     .logo{
         position: relative;

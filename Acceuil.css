@@ -60,9 +60,7 @@ body{
    
    line-height: 25px;
 }
-::-webkit-scrollbar{
-   display: none;
-}
+
 .desc_lien{
     position: relative;
     display: inline-block;
