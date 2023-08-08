@@ -7,9 +7,11 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-
+.header{
+    margin-bottom: 5%;
+}
 
 .deco{
     width: 150px;
@@ -17,9 +19,10 @@ body{
     background-color: rgba(61, 61, 248, 0.555);
     border-radius: 15px;
     margin-bottom: -15px;
+    z-index: 1;
 }
 .Soustitre{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-left: 5% ;
     display: block;
 }
@@ -29,11 +32,14 @@ body{
 
 .quinoussomme{
    display: inline-block;
+   /* margin-bottom: 2%; */
+   
 }
 .sousDiv{
    display: flex;
    width: 90%;
    height: 500px;
+   backdrop-filter: blur(7px);
    background-color:rgba(255, 255, 255, 0.666) ;
    margin: 10px auto;
    border-radius: 15px;
@@ -49,13 +55,16 @@ body{
    margin:20px;
 }
 .descrip{
+    padding: 5px;
    width: 98%;
    height: 75%;
    overflow: auto;
-   margin-left: 20px;
+   margin-left: 10px;
    font-size: 1.2rem;
-   margin-top: 5%;
+   margin-top: 3%;
    /* border: 1px solid black; */
+   background-color: rgb(246, 245, 245);
+   border-radius: 15px;
 }
 .descrip p{
    
@@ -86,6 +95,71 @@ body{
     box-shadow: none;
 }
 
+.objectifContaine{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 2;
+    /* backdrop-filter: blur(7px); */
+    /* background-color: rgba(255, 255, 255, 0.7); */
+}
+.cercledeco{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    z-index: -1;
+    margin-top: -15%;
+    left: -25%;
+    border-radius: 50px;
+    background-color:rgba(61, 61, 248, 0.349); 
+    transform: rotate(50deg);
+}
+.objectif{
+    width: 550px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-radius: 15px;
+    box-shadow: 2px 3px 10px rgba(62, 60, 60, 0.696);
+    z-index:2;
+    background-color: rgba(255, 255, 255, 0.688);
+    backdrop-filter: blur(5px);
+}
+.objectif .img{
+    border-radius: 50%;
+    width: 20%;
+    height: 68%;
+    margin: auto;
+    /* border: 1px solid black;     */
+}
+.objectif .img img{
+    width: 100%;
+    height: 100%;
+}
+.objectif .texte{
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    /* border-left: 2px solid rgb(93, 93, 221); */
+    color: black;
+    line-height: 25px;
+    margin-top: -3px;
+    font-size: 1.2rem;
+    padding-top: px;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1600px) {
     .sousDiv{
@@ -99,11 +173,45 @@ body{
         padding-right: 5px;
         margin-bottom: 5%;
      }
+     
 }
 
 @media screen and (max-width: 700px) {
+    .cercledeco{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        z-index: -1;
+        margin-top: -5%;
+        left: -40%;
+        transform: rotate(45deg);
+        /* border-radius: 50%; */
+        /* background-color:rgba(61, 61, 248, 0.349); ; */
+    }
+    .objectif{
+        width: 350px;
+        height: 250px;
+        display: block;
+        box-shadow: 2px 3px 10px rgba(62, 60, 60, 0.696);
+        text-align: center;
+        padding-top: 8px;
+        margin-top: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .objectif .img{
+        width: 20%;
+        height: 25%;
+        padding: 10px;
+        box-shadow: 2px 3px 10px rgba(62, 60, 60, 0.696);
+    }
     
+    .objectif .texte{
+        font-size: 1.1rem;
+        width: 90%;
+    }
 }
+
 
 @media screen and (max-width: 450px) {
     .Soustitre{
@@ -151,6 +259,8 @@ body{
         padding:13px 20px;
     }
     
+    
+    
 }
 
 @media screen and (max-width: 350px) {
@@ -170,4 +280,16 @@ body{
         margin-top: 5%;
         /* border: 1px solid black; */
      }
+     .objectif .img{
+        width: 20%;
+        height: 20%;
+        padding: 10px;
+        box-shadow: 2px 3px 10px rgba(62, 60, 60, 0.696);
+    }
+     .objectif{
+        width: 550px;
+        height: 275px;
+        margin-top: 20px;
+    }
+     
 }

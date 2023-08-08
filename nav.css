@@ -10,6 +10,7 @@ body{
     background-color: white;
 }
 
+
 .header{
     height: 100vh;
     width: 100.1%;
@@ -104,7 +105,118 @@ nav ul li a:active{
 ::-webkit-scrollbar{
     display: none;
  }
+ .colaborateur{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 7%;
+    margin: auto;
+}
+.colab_logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: white;
+    box-shadow: 2px 3px 10px rgba(62, 60, 60, 0.696);
+}
+.colab_logo img{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    margin: 5px auto;
+}
+footer{
+    display: block;
+    width: 100%;
+}
+.footer{
+    height: 45vh;
+    width: 100%;
+    background-image: url(footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blocsfooter{
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    margin:5% auto;
+    justify-content: space-around;
+    padding-top: 10px;
+}
 
+.foot_desc{
+    display: block;
+    flex-wrap: wrap;
+    height: 43vh;
+    line-height: 25px;
+    color: white;
+    /* border: 1px solid white; */
+}
+.foot_desc img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* margin-left: 20px; */
+    /* margin-top: 30px; */
+}
+
+.foot_nav{
+    width: 150px;
+    height: 43vh;
+    margin-top: 2%;
+    color: white;
+}
+.foot_nav ul{
+    color: white;
+    list-style: none;
+    padding-left: 10px;
+}
+.foot_nav ul a{
+    color: white;
+    text-decoration: none;
+    /* margin-top: 20px; */
+    line-height: 40px;
+}
+
+.foot_reseau_sociaux{
+    width: 400px;
+    height: 40vh;
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: white;
+}
+.foot_reseau_sociaux a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: 5px;
+}
+.foot_reseau_sociaux a:hover{
+    scale: 1.1;
+    background-color: orangered;
+}
+.foot_reseau_sociaux a img{
+    width: 100%;
+    height: 100%;
+}
+.copyright{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(7px);
+   
+}
 
 
 
@@ -235,10 +347,64 @@ nav ul li a:active{
         width: 98%;
         padding-top: 150px;
         font-size: xx-large;
-}
-.titre h1{
-    font-size: 2.5rem;
-}
+    }
+    .titre h1{
+        font-size: 2.5rem;
+    }
+    .colab_logo{
+        margin-left: 10px;
+        /* margin-top: 20%; */
+        margin: 10px auto;
+
+    }
+    
+    footer{
+        width: 100%;
+        height: 95vh;
+        margin-top: 120px;
+    }
+    .footer{
+        width: 100%;
+        position: relative;
+        height: 95vh;
+        margin: auto;
+    }
+    .blocsfooter{
+        display: block;
+        width: 99%;
+        height: 75vh;
+        justify-content: space-around;
+    }
+    .foot_desc img{
+        width: 70px;
+        height: 70px;
+        margin-left: 20px;
+        /* margin-top: 30px; */
+    }
+    .foot_desc{
+        width: 98%;
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+    .foot_nav{
+        width: 80%;
+        height: 40vh;
+        margin-top: 5%;
+        margin-left: 20px;
+        color: white;
+        text-align: left;
+    }
+    .foot_reseau_sociaux{
+        width: 80%;
+        height: 50px;
+        /* margin:2% auto; */
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: -5%;
+        color: white;
+    }
+    
 }
 
 
@@ -279,4 +445,64 @@ nav ul li a:active{
     .titre h1{
         font-size: 2rem;
     }
+    .colab_logo{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin: auto;
+        margin-top: 5%;
+    }
+    footer{
+        width: 100%;
+        height: 140vh;
+        margin-top: 120px;
+    }
+    .footer{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        margin: auto;
+    }
+    .blocsfooter{
+        display: block;
+        width: 99%;
+        height: 105vh;
+        justify-content: space-around;
+    }
+    .foot_desc img{
+        width: 70px;
+        height: 70px;
+        margin-left: 20px;
+        /* margin-top: 30px; */
+    }
+    .foot_desc{
+        width: 90%;
+        /* height: 200px; */
+    }
+    .foot_nav{
+        width: 80%;
+        height: 40vh;
+        margin-top: 45%;
+        margin-left: 20px;
+        color: white;
+        text-align: left;
+    }
+    .foot_reseau_sociaux{
+        width: 80%;
+        height: 50px;
+        /* margin:5% auto; */
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 18%;
+        color: white;
+    }
 }
+
+
+
+
+
+
+
+
+
